@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Bhandari | Security & Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-green-400 selection:text-black">
+
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-900">
+        <div class="flex items-center justify-between max-w-6xl mx-auto p-4 md:p-6">
+            <div class="text-xl font-bold tracking-tighter">
+                ~/Tanish Bhandari<span class="text-gray-500"></span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400 font-mono">
+                <a href="#projects" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./projects</a>
+                <a href="#reports" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./reports</a>
+                <a href="blogs.html" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./blogs</a>
+                <a href="#stack" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./stack</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                
+                <a href="mailto:your-email@example.com" class="hidden md:block bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition-colors">
+                    Contact
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-gray-900 p-4 space-y-4 font-mono text-sm">
+            <a href="#projects" class="block text-gray-300 hover:text-green-400">./projects</a>
+            <a href="#reports" class="block text-gray-300 hover:text-green-400">./reports</a>
+            <a href="#blogs" class="block text-gray-300 hover:text-green-400">./blogs</a>
+             <a href="#MyIdols" class="block text-gray-300 hover:text-green-400">./MyIdols</a>
+            <a href="#stack" class="block text-gray-300 hover:text-green-400">./stack</a>
+        </div>
+    </nav>
+
+    <main class="flex flex-col items-center justify-center text-center mt-32 px-4 relative min-h-[60vh]">
+        <div class="absolute top-0 -z-10 h-full w-full bg-black">
+            <div class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(34,197,94,0.05)] blur-[80px]"></div>
+        </div>
+
+        <div class="font-mono text-green-500 mb-4 bg-green-500/10 px-3 py-1 rounded-full text-xs border border-green-500/20">
+            $ whoami
+        </div>
+
+        <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter leading-tight max-w-5xl text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600">
+            Secure Systems. <br />
+            Scalable Logic.
+        </h1>
+
+        <p class="mt-8 text-lg md:text-xl text-gray-500 max-w-2xl font-light">
+            Student developer bridging the gap between <span class="text-gray-300 font-medium">SOC Architecture</span> and <span class="text-gray-300 font-medium">AI Agents</span>.
+        </p>
+
+        <div class="mt-10 flex gap-4">
+            <a href="#projects" class="bg-white text-black px-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-transform">
+                View Source
+            </a>
+            <a href="https://drive.google.com" target="_blank" class="border border-gray-700 text-gray-300 px-8 py-3.5 rounded-full text-sm font-medium hover:border-green-500 hover:text-green-400 transition-colors">
+                cat resume.pdf
+            </a>
+        </div>
+    </main>
+
+    <section id="projects" class="max-w-6xl mx-auto mt-20 px-6 py-20">
+        <div class="flex items-end justify-between mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Top projects</h2>
+            <span class="text-gray-600 font-mono text-xs hidden md:block">user@portfolio:~/projects$ ls -la</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="group relative bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 transition-all hover:-translate-y-1">
+                <div class="flex items-center gap-2 px-4 py-3 bg-gray-900/30 border-b border-gray-800">
+                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    <div class="ml-2 text-xs text-gray-500 font-mono">crop_agent.py</div>
+                </div>
+                <div class="p-6 font-mono text-sm">
+                    <div class="text-purple-400 font-bold mb-2">def <span class="text-blue-400">detect_disease</span>(image):</div>
+                    <p class="text-gray-500 leading-relaxed mb-4">
+                        # Multi-modal agent using computer vision to identify crop pathogens in real-time.
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-xs text-gray-400 bg-gray-900 px-3 py-1 rounded border border-gray-800">
+                        <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                        v1.0.4 Deployed
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 transition-all hover:-translate-y-1">
+                <div class="flex items-center gap-2 px-4 py-3 bg-gray-900/30 border-b border-gray-800">
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="ml-2 text-xs text-gray-500 font-mono">zsh</div>
+                </div>
+                <div class="p-6 font-mono text-sm">
+                    <div class="text-green-400 mb-2">➜ <span class="text-white">./scan_url.sh</span> <span class="text-red-400">--deep</span></div>
+                    <p class="text-gray-500 leading-relaxed mb-4">
+                        > Analyzing URL patterns...<br>
+                        > <span class="text-red-500">THREAT DETECTED</span><br>
+                        ML-based engine for identifying malicious domains.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 transition-all hover:-translate-y-1">
+                <div class="flex items-center gap-2 px-4 py-3 bg-gray-900/30 border-b border-gray-800">
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="ml-2 text-xs text-gray-500 font-mono">root@hostinger</div>
+                </div>
+                <div class="p-6 font-mono text-sm">
+                    <div class="text-gray-400 mb-2">System Status: <span class="text-green-400">Online</span></div>
+                    <div class="space-y-1 text-gray-500 text-xs mb-4">
+                        <div class="flex justify-between"><span>Uptime:</span> <span class="text-gray-300">42 days</span></div>
+                        <div class="flex justify-between"><span>Services:</span> <span class="text-gray-300">Docker, Nginx</span></div>
+                    </div>
+                    <div class="text-gray-500 text-sm">Self-hosted infrastructure.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="reports" class="max-w-6xl mx-auto px-6 mb-20 border-t border-gray-900 pt-20">
+        <div class="flex items-end justify-between mb-8">
+            <h2 class="text-3xl font-bold tracking-tight">Latest Threat Intel</h2>
+            <span class="text-gray-600 font-mono text-xs hidden md:block">~/documents/reports/</span>
+        </div>
+
+        <div class="bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden">
+            <div class="grid grid-cols-12 px-6 py-3 border-b border-gray-800 bg-gray-900/30 text-xs font-mono text-gray-500 uppercase tracking-wider">
+                <div class="col-span-8 md:col-span-6">Filename</div>
+                <div class="col-span-4 md:col-span-2 text-right">Size</div>
+                <div class="hidden md:block col-span-3 text-right">Date Modified</div>
+                <div class="hidden md:block col-span-1 text-center">Type</div>
+            </div>
+            
+            <div class="grid grid-cols-12 px-6 py-4 hover:bg-gray-900/20 border-b border-gray-800/50 transition-colors group cursor-pointer">
+                <div class="col-span-8 md:col-span-6 flex items-center gap-3">
+                    <svg class="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 2H7a2 2 0 00-2 2v15a2 2 0 002 2z" /></svg>
+                    <span class="text-gray-300 font-mono text-sm group-hover:text-green-400 transition-colors">analysis_fifo_algorithm.pdf</span>
+                </div>
+                <div class="col-span-4 md:col-span-2 text-right text-gray-500 font-mono text-sm">2.4 MB</div>
+                <div class="hidden md:block col-span-3 text-right text-gray-500 font-mono text-sm">Nov 26, 2025</div>
+                <div class="hidden md:block col-span-1 text-center text-xs border border-gray-800 rounded bg-gray-900 text-gray-400">PDF</div>
+            </div>
+
+            <div class="grid grid-cols-12 px-6 py-4 hover:bg-gray-900/20 transition-colors group cursor-pointer">
+                <div class="col-span-8 md:col-span-6 flex items-center gap-3">
+                    <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    <span class="text-gray-300 font-mono text-sm group-hover:text-green-400 transition-colors">incident_response_playbook.docx</span>
+                </div>
+                <div class="col-span-4 md:col-span-2 text-right text-gray-500 font-mono text-sm">845 KB</div>
+                <div class="hidden md:block col-span-3 text-right text-gray-500 font-mono text-sm">Dec 10, 2025</div>
+                <div class="hidden md:block col-span-1 text-center text-xs border border-gray-800 rounded bg-gray-900 text-gray-400">DOC</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="max-w-6xl mx-auto px-6 mb-20 border-t border-gray-900 pt-20">
+        <div class="flex items-end justify-between mb-8">
+            <h2 class="text-3xl font-bold tracking-tight">Tech Stack</h2>
+            <span class="text-gray-600 font-mono text-xs hidden md:block">~/config.json</span>
+        </div>
+
+        <div class="bg-[#0a0a0a] border border-gray-800 p-8 rounded-xl font-mono text-sm overflow-x-auto">
+            <div class="text-gray-400">
+                <span class="text-purple-400">"skills"</span>: {<br>
+                &nbsp;&nbsp;<span class="text-blue-400">"languages"</span>: [<span class="text-green-400">"JavaScript"</span>, <span class="text-green-400">"Python"</span>, <span class="text-green-400">"Bash"</span>],<br>
+                &nbsp;&nbsp;<span class="text-blue-400">"security"</span>: [<span class="text-green-400">"Burp Suite"</span>, <span class="text-green-400">"Wireshark"</span>, <span class="text-green-400">"SIEM/SOC"</span>],<br>
+                &nbsp;&nbsp;<span class="text-blue-400">"devops"</span>: [<span class="text-green-400">"Docker"</span>, <span class="text-green-400">"Nginx"</span>, <span class="text-green-400">"Linux Hardening"</span>],<br>
+                &nbsp;&nbsp;<span class="text-blue-400">"editors"</span>: [<span class="text-green-400">"Neovim"</span>, <span class="text-green-400">"VS Code"</span>]<br>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="max-w-6xl mx-auto px-6 mb-20 border-t border-gray-900 pt-20">
+        <div class="flex items-end justify-between mb-8">
+            <h2 class="text-3xl font-bold tracking-tight">Latest blogs</h2>
+            <span class="text-gray-600 font-mono text-xs hidden md:block">cat notes.md</span>
+        </div>
+        
+        <div class="border-l-2 border-gray-800 pl-6 space-y-8">
+            <article class="group cursor-pointer">
+                <div class="text-xs font-mono text-gray-500 mb-1">2025-11-28</div>
+                <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors">
+                    <span class="text-green-500 mr-2">#</span> Setting up a VPS for Secure Mail
+                </h3>
+                <p class="text-gray-500 mt-2 max-w-2xl">
+                    A walkthrough of my migration from Proton Mail to a self-hosted Postfix solution on Hostinger...
+                </p>
+                <div class="mt-3 text-sm text-green-500 font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                    [Read More]
+                </div>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="text-xs font-mono text-gray-500 mb-1">2025-11-15</div>
+                <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors">
+                    <span class="text-green-500 mr-2">#</span> EDR to SIEM Data Flow
+                </h3>
+                <p class="text-gray-500 mt-2 max-w-2xl">
+                    Understanding how telemetry moves from endpoints to the SOC dashboard using Elastic Stack...
+                </p>
+                <div class="mt-3 text-sm text-green-500 font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                    [Read More]
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 py-12 text-center bg-[#050505]">
+        <p class="text-gray-600 font-mono text-sm">
+            <span class="text-green-500">➜</span> echo "Built by Tanish."
+        </p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
