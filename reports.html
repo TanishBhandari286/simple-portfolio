@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs | Tanish Bhandari</title>
-    <meta name="description" content="Technical blog posts on security architecture, homelabs, and software engineering by Tanish Bhandari">
+    <title>Reports | Tanish Bhandari</title>
+    <meta name="description" content="Security analysis reports and technical documentation by Tanish Bhandari">
     <link rel="icon" type="image/png" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -23,8 +23,8 @@
             
             <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400 font-mono">
                 <a href="projects.html" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./projects</a>
-                <a href="reports.html" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./reports</a>
-                <a href="blogs.html" class="text-white underline decoration-green-500 underline-offset-4">./blogs</a>
+                <a href="reports.html" class="text-white underline decoration-green-500 underline-offset-4">./reports</a>
+                <a href="blogs.html" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./blogs</a>
                 <a href="stack.html" class="hover:text-white hover:underline decoration-green-500 underline-offset-4 transition-all">./stack</a>
             </div>
 
@@ -48,8 +48,8 @@
 
         <div id="mobile-menu" class="hidden md:hidden bg-[#050505] border-b border-gray-900 p-4 space-y-4 font-mono text-sm">
             <a href="projects.html" class="block text-gray-300 hover:text-green-400">./projects</a>
-            <a href="reports.html" class="block text-gray-300 hover:text-green-400">./reports</a>
-            <a href="blogs.html" class="block text-white">./blogs</a>
+            <a href="reports.html" class="block text-white">./reports</a>
+            <a href="blogs.html" class="block text-gray-300 hover:text-green-400">./blogs</a>
             <a href="stack.html" class="block text-gray-300 hover:text-green-400">./stack</a>
         </div>
     </nav>
@@ -57,8 +57,8 @@
     <main class="max-w-6xl mx-auto mt-32 px-6 mb-20">
         
         <header class="mb-20">
-            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Writing</h1>
-            <p class="text-gray-500 text-lg mb-8 max-w-2xl">Thoughts on security architecture, homelabs, and software engineering.</p>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Technical Reports</h1>
+            <p class="text-gray-500 text-lg mb-8 max-w-2xl">Security analysis, system documentation, and research papers.</p>
             
             <div class="relative w-full">
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -69,42 +69,42 @@
                 <input type="text" 
                        id="search-input"
                        class="block w-full pl-12 pr-4 py-4 border border-gray-800 rounded-xl leading-5 bg-[#0a0a0a] text-gray-300 placeholder-gray-600 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 sm:text-base transition-colors font-mono" 
-                       placeholder="Search posts...">
+                       placeholder="Search reports...">
                 <div class="absolute inset-y-0 right-0 pr-4 flex items-center">
                     <span class="text-gray-600 text-xs font-mono border border-gray-800 rounded px-2 py-1">Ctrl K</span>
                 </div>
             </div>
         </header>
 
-        <div class="space-y-16" id="articles-container">
+        <div class="space-y-16" id="reports-container">
 
             <article class="flex flex-col md:flex-row gap-8 group cursor-pointer hover:bg-gray-900/20 p-4 -mx-4 rounded-2xl transition-all">
                 
                 <div class="w-full md:w-[45%] aspect-video bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden relative shrink-0">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-900/20 to-black group-hover:scale-105 transition-transform duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
-                         <svg class="w-12 h-12 text-gray-700 group-hover:text-green-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                         <svg class="w-12 h-12 text-gray-700 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 2H7a2 2 0 00-2 2v15a2 2 0 002 2z" /></svg>
                     </div>
                 </div>
 
                 <div class="flex-1 flex flex-col">
-                    <h2 class="text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-green-400 transition-colors mb-3 leading-tight">
-                        Why I Migrated to a Self-Hosted Mail Server
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-red-400 transition-colors mb-3 leading-tight">
+                        FIFO Page Replacement Algorithm Analysis
                     </h2>
 
                     <div class="flex items-center gap-3 text-xs text-gray-500 font-mono mb-4">
-                        <span>Oct 9, 2025</span>
+                        <span>Nov 26, 2025</span>
                         <span>•</span>
-                        <span>5 min read</span>
-                        <span class="ml-auto md:ml-0 text-green-500 bg-green-500/10 px-2 py-0.5 rounded border border-green-500/20">Security</span>
+                        <span>2.4 MB</span>
+                        <span class="ml-auto md:ml-0 text-red-400 bg-red-400/10 px-2 py-0.5 rounded border border-red-400/20">PDF</span>
                     </div>
                     
                     <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
-                        Proton Mail is great, but I wanted full control over my DKIM and SPF records. Here is how I set up Postfix and Dovecot on a hardened Linux VPS to handle my own traffic.
+                        Comprehensive analysis of First-In-First-Out page replacement algorithm implementation. Covers performance metrics, page fault ratios, and comparison with LRU and optimal algorithms in various memory scenarios.
                     </p>
                     
                     <div class="mt-auto flex items-center text-white text-sm font-semibold group-hover:translate-x-1 transition-transform">
-                        Read post <svg class="w-4 h-4 ml-1 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        View report <svg class="w-4 h-4 ml-1 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </div>
                 </div>
             </article>
@@ -114,30 +114,63 @@
             <article class="flex flex-col md:flex-row gap-8 group cursor-pointer hover:bg-gray-900/20 p-4 -mx-4 rounded-2xl transition-all">
                 
                 <div class="w-full md:w-[45%] aspect-video bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden relative shrink-0">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-black group-hover:scale-105 transition-transform duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
-                         <svg class="w-12 h-12 text-gray-700 group-hover:text-blue-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                         <svg class="w-12 h-12 text-gray-700 group-hover:text-purple-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                     </div>
                 </div>
 
                 <div class="flex-1 flex flex-col">
-                    <h2 class="text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors mb-3 leading-tight">
-                        Coolify vs Dokploy: My Homelab Choice
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-purple-400 transition-colors mb-3 leading-tight">
+                        Malware Traffic Analysis with Wireshark
                     </h2>
 
                     <div class="flex items-center gap-3 text-xs text-gray-500 font-mono mb-4">
-                        <span>Sep 14, 2025</span>
+                        <span>Dec 15, 2025</span>
                         <span>•</span>
-                        <span>8 min read</span>
-                        <span class="ml-auto md:ml-0 text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">DevOps</span>
+                        <span>4.1 MB</span>
+                        <span class="ml-auto md:ml-0 text-purple-400 bg-purple-400/10 px-2 py-0.5 rounded border border-purple-400/20">PDF</span>
                     </div>
                     
                     <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
-                        I tested both platforms for deploying my Node.js and Docker containers. While Coolify is popular, Dokploy offered the lightweight simplicity I needed for my smaller Hostinger tier.
+                        Deep dive into network traffic analysis using Wireshark for malware detection. Covers packet inspection, protocol analysis, identifying C2 communication patterns, and extracting IOCs from captured network traffic.
                     </p>
                     
                     <div class="mt-auto flex items-center text-white text-sm font-semibold group-hover:translate-x-1 transition-transform">
-                        Read post <svg class="w-4 h-4 ml-1 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        View report <svg class="w-4 h-4 ml-1 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </div>
+                </div>
+            </article>
+
+            <div class="h-px bg-gray-900 w-full"></div>
+
+            <article class="flex flex-col md:flex-row gap-8 group cursor-pointer hover:bg-gray-900/20 p-4 -mx-4 rounded-2xl transition-all">
+                
+                <div class="w-full md:w-[45%] aspect-video bg-[#0a0a0a] border border-gray-800 rounded-xl overflow-hidden relative shrink-0">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                         <svg class="w-12 h-12 text-gray-700 group-hover:text-orange-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex flex-col">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-orange-400 transition-colors mb-3 leading-tight">
+                        HivePro vs Qualys: Platform Comparison
+                    </h2>
+
+                    <div class="flex items-center gap-3 text-xs text-gray-500 font-mono mb-4">
+                        <span>Dec 24, 2025</span>
+                        <span>•</span>
+                        <span>1.8 MB</span>
+                        <span class="ml-auto md:ml-0 text-orange-400 bg-orange-400/10 px-2 py-0.5 rounded border border-orange-400/20">PPTX</span>
+                    </div>
+                    
+                    <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                        Competitive analysis comparing HivePro and Qualys vulnerability management platforms. Examines feature sets, pricing models, deployment options, integration capabilities, and overall value proposition for enterprise security teams.
+                    </p>
+                    
+                    <div class="mt-auto flex items-center text-white text-sm font-semibold group-hover:translate-x-1 transition-transform">
+                        View report <svg class="w-4 h-4 ml-1 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </div>
                 </div>
             </article>
@@ -163,18 +196,18 @@
 
         // Search functionality
         const searchInput = document.getElementById('search-input');
-        const articlesContainer = document.getElementById('articles-container');
-        const articles = Array.from(articlesContainer.querySelectorAll('article'));
+        const reportsContainer = document.getElementById('reports-container');
+        const reports = Array.from(reportsContainer.querySelectorAll('article'));
 
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
             
-            articles.forEach(article => {
-                const text = article.textContent.toLowerCase();
+            reports.forEach(report => {
+                const text = report.textContent.toLowerCase();
                 if (text.includes(query)) {
-                    article.style.display = '';
+                    report.style.display = '';
                 } else {
-                    article.style.display = 'none';
+                    report.style.display = 'none';
                 }
             });
         });
